@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function login_do_while() {
+        var user;
+        var pass;
+        var recorrente;
+        recorrente = true;
+        window.alert("LOGIN COM DO .. WHILE")
+        do {
+            user = window.prompt('Entre com nome do usuário');
+            pass = window.prompt('Entre com a senha');
+            if (user == "Marcio") {
+                if (pass == "1234") {
+                    window.alert("Você será redirecionado ao seu perfil.");
+                    recorrente = false;
+                }
+            }
+        } while (recorrente == true);
+    }
+
+    function login_while() {
+        var user;
+        var pass;
+        var recorrente;
+        recorrente = true;
+        window.alert("LOGIN COM WHILE")
+        while (recorrente) {
+            user = window.prompt('Entre com nome do usuário');
+            pass = window.prompt('Entre com a senha');
+            if (user == "Marcio") {
+                if (pass == "1234") {
+                    window.alert("Você será redirecionado ao seu perfil.");
+                    recorrente = false;
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    * {
+        padding: 20px;
+    }
+
+    body {
+        border: 2px dashed blue;
+    }
+
+    button {
+        border-radius: 10px;
+        font-size: 32px;
+        width: 100%;
+        margin: 10px;
+    }
+
+    header {
+        font-size: 48px;
+        width: 100%;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>Exemplo de teste de usuário e senha simplificado</header>
+    <button onclick="login_while()" style="background-color: green;">Login com <b>while</b></button>
+    <button onclick="login_do_while()" style="background-color: goldenrod;">Login com <b>do .. while</b></button>
+</body>
+
+</html>

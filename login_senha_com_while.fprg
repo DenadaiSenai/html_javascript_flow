@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="2EM SENAI"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-12 01:06:04 "/>
+        <attribute name="created" value="MkVNIFNFTkFJO0VDRTQzNk1JQ1JPUFJPRjsyMDIzLTA0LTEyOyIxMjo1NDo0MSAiOzI4MzM="/>
+        <attribute name="edited" value="MkVNIFNFTkFJO0VDRTQzNk1JQ1JPUFJPRjsyMDIzLTA0LTEyOyIwMTowNjowNCAiOzc7Mjk0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="user" type="String" array="False" size=""/>
+            <declare name="pass" type="String" array="False" size=""/>
+            <declare name="recorrente" type="Boolean" array="False" size=""/>
+            <assign variable="recorrente" expression="true"/>
+            <while expression="recorrente">
+                <input variable="user"/>
+                <input variable="pass"/>
+                <if expression="user==&quot;Marcio&quot;">
+                    <then>
+                        <if expression="pass==&quot;1234&quot;">
+                            <then>
+                                <output expression="&quot;Voc&#234; ser&#225; redirecionado ao seu perfil.&quot;" newline="True"/>
+                                <assign variable="recorrente" expression="false"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
